@@ -1,0 +1,338 @@
+:root {
+    --main-color: #ABD4EB; 
+    --color-whight: #fff;
+    --main-color-light:#DCEEF8;
+    --main-color-light-2:#F6FBFE;
+    --color-gray:#00000029;
+    --color-gray-2: #00000014;
+    --hover-color:#072130;
+  }
+  body
+  {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+  }
+  a{text-decoration: none;}
+  .btn
+  {
+    outline: none;
+    box-shadow: none;
+  }
+  .btn:focus
+  {
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* banner start */
+  .banner
+  {
+      min-height: 700px;
+      background-position: center bottom !important;
+      background-size: cover !important;
+      position: relative;
+  }
+  .banner-text
+  {
+      flex: 0 0 75%;
+      max-width: 75%;
+      text-align: center;
+      height: 100%;
+      margin: 15% 0 10%;
+      z-index: 99999;
+  }
+  .banner-text h1
+  {
+    font-size: 41px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--hover-color);
+    margin: 0 0 15px; 
+  }
+  .banner-text p
+  {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--hover-color);
+    margin: 0 0 15px; 
+  }
+  .btn-buy-now
+  {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0;
+    font-weight: 500;
+    color: var(--color-whight);
+    background: var(--hover-color);
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-top: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    transition: all .5s ease-in-out;
+  }
+  .btn-buy-now:hover,
+  .btn-buy-now:focus
+  {
+    background: transparent;
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+  }
+  /* banner end */
+  .banner-bottom-sec
+  {
+    position: relative;
+    top: -100px;
+  }
+  .banner-bottom-sec-box
+  {
+    width: 100%;
+    background: var(--color-whight);
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0px 3px 25px #00000014;
+    transition: all .5s ease-in-out;
+  }
+  .banner-bottom-sec-hover-box-img
+  {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .banner-bottom-sec-hover-box
+  {
+    position: absolute;
+    bottom: -250px;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7,33,48,0.8);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+  }
+  .banner-bottom-sec-hover-box img
+  {
+    flex: 0 0 100%;
+    max-width: 60px;
+    margin-bottom: 15px;
+  }
+  .banner-bottom-sec-hover-box h3
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-whight);
+    text-align: center;
+    margin: 20px 0;
+  }
+  .banner-bottom-sec-box:hover .banner-bottom-sec-hover-box
+  {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  .touchless-wall-mount
+  {
+    padding: 40px 0 60px;
+  }
+  .touchless-wall-mount ul
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .touchless-wall-mount ul li:first-child
+  {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: 400px;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  .touchless-wall-mount ul li:last-child
+  {
+    flex: 0 0 60%;
+    max-width: 60%;
+    background: var(--main-color-light-2);
+    padding:70px;
+  }
+  .touchless-wall-mount ul li h1
+  {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 15px;
+    color: var(--hover-color);
+    font-weight: 700;
+  }
+  .touchless-wall-mount ul li p
+  {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 15px;
+  }
+  .btn-buy
+  {
+    width: 180px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid var(--hover-color);
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0;
+    font-weight: 600;
+    color: var(--hover-color);
+    margin-top: 25px;
+    transition: all .5s ease-in-out;
+  }
+  .btn-buy svg
+  {
+    position: relative;
+    margin-left: 8px;
+    -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 2s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .btn-buy svg path
+  {
+    transition: all .5s ease-in-out;
+  }
+  .btn-buy:hover
+  {
+    background: var(--hover-color);
+    color: var(--color-whight);
+  }
+  .btn-buy:hover svg path
+  {
+    fill: var(--color-whight);
+  }
+
+  .about
+  {
+    margin: 60px 0 0;
+    background: var(--main-color-light-2);
+  }
+  .about img
+  {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .about h1,
+  .about_water_color h1
+  {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 15px;
+    color: var(--hover-color);
+    font-weight: 600;
+  }
+  .about h1 span,
+  .about_water_color h1 span
+  {
+    font-size: 42px;
+    font-weight: 700;
+    display: block;
+  }
+  .about p,
+  .about_water_color p
+  {
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--hover-color);
+    font-weight: 500;
+  }
+  .advantages-of-Plumbed,
+  .Intrix-Kettle-Tap,
+  .Hot-Taps
+  {
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .advantages-of-Plumbed img
+  {
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: -70px;
+  }
+  .Intrix-Kettle-Tap img
+  {
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+  .Hot-Taps img
+  {
+    margin-top: 50px;
+    width: 70%;
+  }
+  .free-shipping
+  {
+    padding: 100px 0;
+  }
+  .free-shipping-box
+  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--color-whight);
+    box-shadow: 0px 3px 25px #00000014;
+  }
+  .free-shipping-text
+  {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 80px;
+  }
+  .free-shipping-img
+  {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .free-shipping-img img
+  {
+    width: 60%;
+    display: block;
+    margin: 30px auto 0;
+  }
+  .free-shipping-text h1
+  {
+    font-size: 40px;
+    color: var(--hover-color);
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 15px;
+  }
+  .free-shipping-text h3
+  {
+    font-size: 30px;
+    color: var(--hover-color);
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0;
+  }

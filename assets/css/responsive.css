@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1900px) 
+{
+  .touchless-wall-mount ul li h1
+  {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 1600px)
+{
+  .banner
+  {
+    min-height: 600px;
+  }
+  .about h1, .about_water_color h1,
+  .free-shipping-text h3
+  {
+    font-size: 28px;
+  }
+  .about h1 span, .about_water_color h1 span
+  {
+    font-size: 38px;
+  }
+  .free-shipping-text h1
+  {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 1366px)
+{
+  .about h1, .about_water_color h1, .free-shipping-text h3 {
+    font-size: 26px;
+  }
+  .about h1 span, .about_water_color h1 span {
+    font-size: 35px;
+  }
+  .about p, .about_water_color p
+  {
+    font-size: 16px;
+  }
+  .btn-buy
+  {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .free-shipping-text h1 {
+    font-size: 35px;
+  }
+  .btn-buy-now
+  {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+}
